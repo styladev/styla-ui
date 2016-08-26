@@ -1,0 +1,105 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+/*
+    Custom appearance of inverted form
+*/
+.ui.inverted.form .field
+{
+    .ui.input
+    {
+        /*
+            Set text color to white
+        */
+        input[type="text"],
+        input[type="password"]
+        {
+            color:                      #FFF;
+        }
+
+        /*
+            Adjust appearance of webkit autofill
+        */
+        input:-webkit-autofill
+        {
+            border-color:               #666 !important;
+            box-shadow:                 0px 0px 0px 100px #202223 inset !important;
+            -webkit-text-fill-color:    white;
+        }
+
+        input:-webkit-autofill:focus
+        {
+            border-color:               #666 !important;
+            box-shadow:                 0px 0px 0px 100px #27282b inset !important;
+            -webkit-text-fill-color:    white;
+        }
+
+        /*
+            Adjust placeholder color
+        */
+        input[type="text"]::-webkit-input-placeholder,
+        input[type="password"]::-webkit-input-placeholder
+        {
+           color:                       rgba(255,255,255,0.7);
+        }
+
+        input[type="text"]:-moz-placeholder,
+        input[type="password"]:-moz-placeholder
+        { /* Firefox 18- */
+           color:                       rgba(255,255,255,0.7);
+        }
+
+        input[type="text"]::-moz-placeholder,
+        input[type="password"]::-moz-placeholder
+        {  /* Firefox 19+ */
+           color:                       rgba(255,255,255,0.7);
+        }
+
+        input[type="text"]:-ms-input-placeholder,
+        input[type="password"]:-ms-input-placeholder
+        {
+           color:                       rgba(255,255,255,0.7);
+        }
+    }
+
+    &.error .ui.input
+    {
+        /*
+            Appearance when error
+        */
+        input[type="text"],
+        input[type="password"]
+        {
+            background:                 transparent;
+            color:                      @errorTextColor;
+        }
+
+        /*
+            Adjust placeholder color
+        */
+        input[type="text"]::-webkit-input-placeholder,
+        input[type="password"]::-webkit-input-placeholder
+        {
+           color:                       @errorTextColor;
+        }
+
+        input[type="text"]:-moz-placeholder,
+        input[type="password"]:-moz-placeholder
+        { /* Firefox 18- */
+           color:                       @errorTextColor;
+        }
+
+        input[type="text"]::-moz-placeholder,
+        input[type="password"]::-moz-placeholder
+        {  /* Firefox 19+ */
+           color:                       @errorTextColor;
+        }
+
+        input[type="text"]:-ms-input-placeholder,
+        input[type="password"]:-ms-input-placeholder
+        {
+           color:                       @errorTextColor;
+        }
+    }
+}

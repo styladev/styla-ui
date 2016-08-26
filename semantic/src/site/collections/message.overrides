@@ -1,0 +1,11 @@
+/*******************************
+        Site Overrides
+*******************************/
+
+/*
+    No background on message in inverted form
+*/
+.ui.inverted.form.error .ui.error.message
+{
+    background:                 transparent;
+}

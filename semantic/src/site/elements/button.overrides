@@ -1,0 +1,210 @@
+/*******************************
+         Site Overrides
+*******************************/
+.ui.button
+{
+    letter-spacing:                 0.05em;
+}
+
+/*
+    GRADIENT BUTTON
+
+    Custom designed button, features a thin gradient outline in Stylas brand colors.
+
+    Class:
+    ui outlined gradient button
+
+*/
+
+.ui.outlined.gradient.button
+{
+
+    position:                       relative;
+    color:                          #fa2176;
+    background-color:               transparent;
+    font-weight:                    400;
+
+    border:                         1px solid #FC1E70;
+    -moz-border-image:              -moz-linear-gradient(top left, #FC1E70 0%, #EA4EBD 100%);
+    -webkit-border-image:           -webkit-linear-gradient(top left, #FC1E70 0%, #EA4EBD 100%);
+    border-image:                   linear-gradient(to bottom right, #FC1E70 0%, #EA4EBD 100%);
+    border-image-slice:             1;
+
+    &:hover,
+    &:active,
+    &.loading
+    {
+        border-color:                   #c7185c;
+        -moz-border-image:              -moz-linear-gradient(top left, #c7185c 0%, #B13B8F 100%);
+        -webkit-border-image:           -webkit-linear-gradient(top left, #c7185c 0%, #B13B8F 100%);
+        border-image:                   linear-gradient(to bottom right, #c7185c 0%, #B13B8F 100%);
+        border-image-slice:             1;
+        color:                          #c7185c;
+    }
+
+    &:active,
+    &.loading
+    {
+        border-color:                   #a2144b;
+        -moz-border-image:              -moz-linear-gradient(top left, #a2144b 0%, #95327A 100%);
+        -webkit-border-image:           -webkit-linear-gradient(top left, #a2144b 0%, #95327A 100%);
+        border-image:                   linear-gradient(to bottom right, #a2144b 0%, #95327A 100%);
+        border-image-slice:             1;
+        color:                          #a2144b;
+
+
+        &:after, &:before
+        {
+            border-width:               1px;
+        }
+
+        &:after
+        {
+            border-color:               #a1154d transparent transparent;
+        }
+    }
+}
+
+/*
+    Prince Button
+*/
+.ui.prince.buttons .button,
+.ui.prince.button {
+  background-color: @prince;
+  color: @princeTextColor;
+  text-shadow: @invertedTextShadow;
+  background-image: @coloredBackgroundImage;
+}
+.ui.prince.button {
+  box-shadow: @coloredBoxShadow;
+}
+.ui.prince.buttons .button:hover,
+.ui.prince.button:hover {
+  background-color: @princeHover;
+  color: @princeTextColor;
+  text-shadow: @invertedTextShadow;
+}
+.ui.prince.buttons .button:focus,
+.ui.prince.button:focus {
+  background-color: @princeFocus;
+  color: @princeTextColor;
+  text-shadow: @invertedTextShadow;
+}
+.ui.prince.buttons .button:active,
+.ui.prince.button:active {
+  background-color: @princeDown;
+  color: @princeTextColor;
+  text-shadow: @invertedTextShadow;
+}
+.ui.prince.buttons .active.button,
+.ui.prince.buttons .active.button:active,
+.ui.prince.active.button,
+.ui.prince.button .active.button:active {
+  background-color: @princeActive;
+  color: @princeTextColor;
+  text-shadow: @invertedTextShadow;
+}
+
+/*
+    Prince Basic Button
+*/
+.ui.basic.prince.buttons .button,
+.ui.basic.prince.button {
+  box-shadow: 0px 0px 0px @basicBorderSize @prince inset !important;
+  color: @prince !important;
+}
+.ui.basic.prince.buttons .button:hover,
+.ui.basic.prince.button:hover {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px @basicColoredBorderSize @princeHover inset !important;
+  color: @princeHover !important;
+}
+.ui.basic.prince.buttons .button:focus,
+.ui.basic.prince.button:focus {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px @basicColoredBorderSize @princeFocus inset !important;
+  color: @princeHover !important;
+}
+.ui.basic.prince.buttons .active.button,
+.ui.basic.prince.active.button {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px @basicColoredBorderSize @princeActive inset !important;
+  color: @princeDown !important;
+}
+.ui.basic.prince.buttons .button:active,
+.ui.basic.prince.button:active {
+  box-shadow: 0px 0px 0px @basicColoredBorderSize @princeDown inset !important;
+  color: @princeDown !important;
+}
+
+/*
+    Electric Crimson Button
+*/
+.ui.crimson.buttons .button,
+.ui.crimson.button {
+  background-color: @crimson;
+  color: @crimsonTextColor;
+  text-shadow: @invertedTextShadow;
+  background-image: @coloredBackgroundImage;
+}
+.ui.crimson.button {
+  box-shadow: @coloredBoxShadow;
+}
+.ui.crimson.buttons .button:hover,
+.ui.crimson.button:hover {
+  background-color: @crimsonHover;
+  color: @crimsonTextColor;
+  text-shadow: @invertedTextShadow;
+}
+.ui.crimson.buttons .button:focus,
+.ui.crimson.button:focus {
+  background-color: @crimsonFocus;
+  color: @crimsonTextColor;
+  text-shadow: @invertedTextShadow;
+}
+.ui.crimson.buttons .button:active,
+.ui.crimson.button:active {
+  background-color: @crimsonDown;
+  color: @crimsonTextColor;
+  text-shadow: @invertedTextShadow;
+}
+.ui.crimson.buttons .active.button,
+.ui.crimson.buttons .active.button:active,
+.ui.crimson.active.button,
+.ui.crimson.button .active.button:active {
+  background-color: @crimsonActive;
+  color: @crimsonTextColor;
+  text-shadow: @invertedTextShadow;
+}
+
+/*
+    Electric Crimson Basic Button
+*/
+.ui.basic.crimson.buttons .button,
+.ui.basic.crimson.button {
+  box-shadow: 0px 0px 0px @basicBorderSize @crimson inset !important;
+  color: @crimson !important;
+}
+.ui.basic.crimson.buttons .button:hover,
+.ui.basic.crimson.button:hover {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px @basicColoredBorderSize @crimsonHover inset !important;
+  color: @crimsonHover !important;
+}
+.ui.basic.crimson.buttons .button:focus,
+.ui.basic.crimson.button:focus {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px @basicColoredBorderSize @crimsonFocus inset !important;
+  color: @crimsonHover !important;
+}
+.ui.basic.crimson.buttons .active.button,
+.ui.basic.crimson.active.button {
+  background: transparent !important;
+  box-shadow: 0px 0px 0px @basicColoredBorderSize @crimsonActive inset !important;
+  color: @crimsonDown !important;
+}
+.ui.basic.crimson.buttons .button:active,
+.ui.basic.crimson.button:active {
+  box-shadow: 0px 0px 0px @basicColoredBorderSize @crimsonDown inset !important;
+  color: @crimsonDown !important;
+}
