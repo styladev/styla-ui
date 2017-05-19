@@ -80,7 +80,7 @@
        Fonts
 --------------------*/
 
-@fontName          : 'Alright Sans'; /* Modified */
+@fontName          : 'Neue Haas Unica W01'; /* Modified */
 @fontSmoothing     : antialiased;
 
 @headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
