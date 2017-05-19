@@ -24,7 +24,7 @@
     background-color:               transparent;
     font-weight:                    400;
 
-    border:                         1px solid #FC1E70;
+    border:                         1px solid #21BDF0;
 
     &:hover,
     &:active,

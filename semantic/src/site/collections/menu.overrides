@@ -2,6 +2,27 @@
          Site Overrides
 *******************************/
 
+.ui.menu
+{
+    /*
+        Menu item letter spacing
+    */
+    .item
+    {
+        letter-spacing:         0.04rem;
+    }
+
+
+    /*
+        Active menu item font weight;
+    */
+    .active.item
+    {
+        font-weight:            bold;
+        letter-spacing:         0;
+    }
+}
+
 /*
     Replace menu drop shadow with subtle grey line.
 */
