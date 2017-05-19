@@ -23,6 +23,8 @@
     color:                          #21BDF0;
     background-color:               transparent;
     font-weight:                    400;
+    text-transform:                 none;
+    padding:                        0.8em 2em;
 
     border:                         1px solid #21BDF0;
 
