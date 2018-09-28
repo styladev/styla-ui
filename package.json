@@ -1,6 +1,6 @@
 {
-  "name": "styla-ui",
-  "version": "0.0.7",
+  "name": "@styla/styla-ui",
+  "version": "0.1.0",
   "description": "A custom theme for Semantic UI based on Styla CI",
   "main": "index.js",
   "scripts": {
